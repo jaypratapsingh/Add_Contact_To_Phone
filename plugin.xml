@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.add_contact"
+    version="1.0.0">
+    <name>Add_Contact</name>
+    <description>Open contact app and fill data to add contact</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,contact,savecontact,addcontact</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/add_contact.js" name="Add_Contact">
+        <clobbers target="add_contact" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Add_Contact" >
+                <param name="android-package" value="com.jp.plugin.contact.Add_Contact"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/contact/Add_Contact.java" target-dir="src/com/jp/plugin/contact" />
+    </platform>
+</plugin>
