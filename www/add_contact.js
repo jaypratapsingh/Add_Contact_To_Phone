@@ -9,5 +9,5 @@ var add_contact = {
     }
 }
 
-module.exports = save_contact;
+module.exports = add_contact;
 
