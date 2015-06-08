@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
 xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.jp.plugin.add_contact"
-    version="1.0.0">
+    version="2.0.0">
     <name>Add_Contact</name>
     <description>Open contact app and fill data to add contact</description>
     <license>Apache 2.0</license>
