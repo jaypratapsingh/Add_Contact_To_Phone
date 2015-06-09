@@ -23,19 +23,19 @@ public class Add_Contact extends CordovaPlugin {
 				String email_id = jsonObject.getString("email_id");
 
 				Intent intent = new Intent(Intent.ACTION_INSERT);
-			    intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
-			    intent.putExtra(ContactsContract.Intents.Insert.NAME, name);
-			    intent.putExtra(ContactsContract.Intents.Insert.PHONE, phone_number);
-			    intent.putExtra(ContactsContract.Intents.Insert.EMAIL, email_id);
-			    cordova.getActivity().startActivity(intent);
+			    	intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
+			    	intent.putExtra(ContactsContract.Intents.Insert.NAME, name);
+			    	intent.putExtra(ContactsContract.Intents.Insert.PHONE, phone_number);
+			    	intent.putExtra(ContactsContract.Intents.Insert.EMAIL, email_id);
+			    	cordova.getActivity().startActivity(intent);
 
-            }
+            		}
 			catch(Exception e) {
 				e.printStackTrace();
 			}
 
-            callbackContext.success("success");
-            return true;
+        	callbackContext.success("success");
+            	return true;
 		}
 		else  {
 			callbackContext.error("Invalid Selection");
