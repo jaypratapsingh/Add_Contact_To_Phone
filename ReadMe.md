@@ -1,4 +1,4 @@
-**********Cordova : Add contact From App***************
+***********Cordova : Add contact From App***************
 
 By using this plugin you can open native contact app and fill data and save contact.
 
